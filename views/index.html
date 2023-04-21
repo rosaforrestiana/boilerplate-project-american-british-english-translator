@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>American/British English Translator</title>
-	<meta name="description" content="An example for the fCC QA American/British English Translator project" />
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link id="favicon" rel="icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon">
-	<link rel="stylesheet" href="../public/style.css" type="text/css" />
-</head>
-
-<body>
-	<header>
-		<h1>
-			American / British English Translator
-		</h1>
-	</header>
-	<hr style="margin: 25px" />
-	<div class="container">
-		<div class="form-container">
-			<textarea
-          rows="10"
-          cols="60"
-          id="text-input"
-        ></textarea>
-        <br />
-        <select id="locale-select">
-          <option value="american-to-british">American to British</option>
-          <option value="british-to-american">British to American</option>
-        </select>
-        <input type="button" value="Translate" id="translate-btn"/>
-      </div>
-      <div id="output-container">
-        <div id="solution-container">
-          Translated Sentence:
-          <div id="translated-sentence"></div>
-          <div id="error-msg"></div>
-        </div>
-      </div>
-    </div>
+  <head>
+    <title>American/British English Translator</title>
+    <meta
+      name="description"
+      content="freeCodeCamp American British Translator"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    		<link id="favicon" rel="icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/style.css" type="text/css" />
+		<link rel="stylesheet" href="../public/style.css" type="text/css" />
+  </head>
+  <body>
+			<div id='mainContainer'>
+				<h2>American / British English Translator</h2>
+				<div id='centerContainer'>
+					<div id='leftSide'>
+						<textarea rows="10" cols="60" id="text-input"></textarea>
+						<div id='leftBottom'>
+							<select id="locale-select">
+									<option value="american-to-british">American to British</option>
+									<option value="british-to-american">British to American</option>
+							</select>
+							<div id='buttonContainer'>
+								<input type="button" value="Translate" id="translate-btn" />
+								<input type="button" value="Clear" id="clear-btn" />
+							</div>
+						</div>
+					</div>
+					<div id='rightSide'>
+						<!--<h4>Translation:</h4> -->
+						<div id="translated-sentence"></div>
+						<div id="error-msg"></div>
+					</div>
+				</div>
+				<p>by <a href="https://github.com/rosaforrestiana/boilerplate-project-american-british-english-translator">Rosaforrestiana</a></p>                <p>Project by <a href="https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/american-british-translator">freeCodeCamp</a></p>
+			</div>
   </body>
-  <script src="../public/index.js"></script>
+   <script src="../public/index.js"></script>
 </html>
